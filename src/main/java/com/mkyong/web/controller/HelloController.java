@@ -14,7 +14,7 @@ public class HelloController {
 	public String printWelcome(ModelMap model) {
 
 		model.addAttribute("message", "Spring 3 MVC Hello World My example by mkyong");
-		return "hello how are you";
+		return "hello";
 
 	}
 
@@ -22,7 +22,7 @@ public class HelloController {
 	public ModelAndView hello(@PathVariable("name") String name) {
 
 		ModelAndView model = new ModelAndView();
-		model.setViewName("hello how are you ");
+		model.setViewName("hello");
 		model.addObject("msg", name);
 
 		return model;
